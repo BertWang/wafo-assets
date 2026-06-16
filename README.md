@@ -68,17 +68,28 @@ Manifest path mapping:
 04_webp_background_1920x1080/        => assets/bg1920/
 ```
 
-## How to use
+## GitHub Pages base
 
-### Direct image
+```text
+https://bertwang.github.io/wafo-assets
+```
 
-Use SVG or PNG path in image source. SVG is best for simple mono icon. PNG is best when you want transparent image details.
+## Direct image example
 
-### Background image
+```html
+<img src="https://bertwang.github.io/wafo-assets/assets/svg/00_wafo_core/wafo-00-wafo_core-001.svg" alt="WAFO asset" style="width:72px;height:72px;display:block;">
+```
 
-Use the `assets/bg1920/` WebP file as a section or banner background. Add a light cream overlay when text is placed above it.
+## Background image example
 
-### CSS class
+Background image must have height, min-height, padding, or content. If the div is empty and has no height, the image will not be visible.
+
+```html
+<div style="min-height:260px;background-image:linear-gradient(rgba(255,248,236,.82),rgba(255,248,236,.82)),url('https://bertwang.github.io/wafo-assets/assets/bg1920/08_thai_ornament/wafo-08-thai_ornament-001-bg1920.webp');background-size:cover;background-position:center;background-repeat:no-repeat;border-radius:24px;">
+</div>
+```
+
+## CSS class usage
 
 Use the category CSS file only for the category you need. Then apply the class from `css_class_index_v2_clean.csv`.
 
