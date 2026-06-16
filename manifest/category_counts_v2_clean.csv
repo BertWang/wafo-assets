@@ -1,0 +1,16 @@
+﻿category_id,category_slug,category_name,count
+00,wafo_core,WAFO Core 核心風格測試,24
+01,yantra,Yantra 法刺符咒,11
+02,deity_guardian,Deity Guardian 天神護法神獸,26
+03,amulet_type,Amulet Type 聖物佛牌類型,18
+04,thai_culture,Thai Culture 泰國文化符號,3
+05,wish_guide,Wish Guide 需求導購願望方向,25
+06,trust_source,Trust Source 品牌信任來源保證,13
+07,blog_knowledge,Blog Knowledge BLOG知識庫圖標,9
+08,thai_ornament,Thai Ornament 傳統泰式紋樣,62
+09,frame_card,Frame Card 邊框卡片框,12
+10,divider,Divider 分隔線,18
+11,corner,Corner 角花邊角裝飾,9
+12,mini_corner,Mini Corner 小型低調角花,6
+13,roof_gable,Roof Gable 屋脊寺廟山牆,8
+14,reference_extracted,Reference Extracted 參考取出待整理,17
