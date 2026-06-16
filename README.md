@@ -74,13 +74,21 @@ Manifest path mapping:
 https://bertwang.github.io/wafo-assets
 ```
 
-## Direct image example
+## Direct image usage
+
+SVG image:
 
 ```html
 <img src="https://bertwang.github.io/wafo-assets/assets/svg/00_wafo_core/wafo-00-wafo_core-001.svg" alt="WAFO asset" style="width:72px;height:72px;display:block;">
 ```
 
-## Background image example
+PNG image:
+
+```html
+<img src="https://bertwang.github.io/wafo-assets/assets/png512/00_wafo_core/wafo-00-wafo_core-001.png" alt="WAFO asset" style="width:96px;height:96px;display:block;">
+```
+
+## Background image usage
 
 Background image must have height, min-height, padding, or content. If the div is empty and has no height, the image will not be visible.
 
@@ -91,7 +99,29 @@ Background image must have height, min-height, padding, or content. If the div i
 
 ## CSS class usage
 
-Use the category CSS file only for the category you need. Then apply the class from `css_class_index_v2_clean.csv`.
+BVSHOP has been tested with external category CSS by link tag. Use category CSS first, not ALL CSS.
+
+Load one category CSS:
+
+```html
+<link rel="stylesheet" href="https://bertwang.github.io/wafo-assets/css/wafo-assets-v2-clean-data-uri-00_wafo_core.css">
+```
+
+Apply one icon class:
+
+```html
+<span class="wafo-asset is-lg wafo-asset--00-wafo_core-001" style="color:#B88A44;"></span>
+```
+
+Full BVSHOP test block:
+
+```html
+<link rel="stylesheet" href="https://bertwang.github.io/wafo-assets/css/wafo-assets-v2-clean-data-uri-00_wafo_core.css">
+<div style="padding:24px;background:#FFF8EC;border-radius:20px;text-align:center;">
+  <span class="wafo-asset is-xl wafo-asset--00-wafo_core-001" style="color:#B88A44;"></span>
+  <div style="margin-top:12px;color:#37200D;font-size:18px;font-weight:700;">WAFO asset test</div>
+</div>
+```
 
 Available size classes:
 
@@ -102,7 +132,7 @@ is-lg = 96px
 is-xl = 128px
 ```
 
-Color is controlled by CSS `color` when using the mask class.
+Color is controlled by CSS color when using the mask class.
 
 ## BVSHOP notes
 
@@ -146,4 +176,5 @@ Preview readable
 Background WebP readable
 Manifest readable
 Category CSS readable
+BVSHOP external CSS link tested
 ```
